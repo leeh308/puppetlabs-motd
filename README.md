@@ -1,6 +1,6 @@
 motd
 ====
-Altered just to test saving
+Altered just to test saving an altered file
 
 Overview
 --------
