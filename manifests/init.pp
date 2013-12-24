@@ -15,7 +15,7 @@
 class motd {
     file { '/etc/motd':
       ensure  => file,
-      backup  => false,
+      mode  => 644,
       content => "Welcome";
     }
   }
