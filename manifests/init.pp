@@ -13,10 +13,11 @@
 #
 # [Remember: No empty lines between comments and class definition]
 class motd {
+  if $kernel == "Linux" {
     file { '/etc/motd':
       ensure  => file,
-      mode  => 644,
-      content => "Welcome";
+      backup => false,
+      content => template("motd/motd.erb"),
     }
   }
-
+}
